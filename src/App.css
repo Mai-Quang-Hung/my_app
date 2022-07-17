@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+:root {
+  --text-color:#666
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  background: #b5d4f3;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+main > h1 {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  color: #f13c24;
+  user-select: none;
+}
+main >h1:before,
+ main >h1:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+ main >h1:before {
+  margin-right: 10px
+}
+
+ main >h1:after {
+  margin-left: 10px
+}
+.Add-article {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.Add-article input {
+  display: block;
+  margin: 1rem auto;
+  width: 20rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+.Add-article input:focus {
+  border: 1px solid #00b8e6;
+
+}
+.Add-article button {
+  width: 21rem;
+  padding: 0.7rem;
+  border: 1px solid #00b8e6;
+  background: #00b8e6;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.Add-article button:hover {
+  background: #0093b8;
+}
+
+.Add-article button:disabled {
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  cursor: not-allowed;
+}
+
+.Article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  text-transform: capitalize;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  user-select: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  cursor: pointer;
+
+}
+
+
+
+.checked {
+  background-color: #ccc;
+  color: #fff;
+  text-decoration: line-through;
+  border-bottom: 2px solid #00b8e6;
+
+
+}
+.checked::before {
+  content: '';
+  position: relative;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.Article button {
+  border-radius: 20px;
+  outline: none;
+}
+
+
+
